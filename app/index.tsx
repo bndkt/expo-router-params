@@ -14,7 +14,7 @@ export default function HomeScreen() {
         darkColor="rgba(255,255,255,0.1)"
       />
       <Link href={"/foo/"} style={{ color: "red" }}>
-        Tap here to go to `/[id]/(tabs)/`
+        Tap here to go to `/foo/`
       </Link>
       <View
         style={styles.separator}

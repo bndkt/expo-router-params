@@ -8,9 +8,11 @@ export default function TabTwoScreen() {
   // When navigating to "Tab Two", this logs `TabTwoScreen {}`
   console.log("TabTwoScreen", useSearchParams());
 
+  const { id } = useSearchParams();
+
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Tab Two</Text>
+      <Text style={styles.title}>Tab Two (ID: {id})</Text>
       <View
         style={styles.separator}
         lightColor="#eee"
