@@ -1,4 +1,4 @@
-import { useSearchParams } from "expo-router";
+import { Link, useSearchParams } from "expo-router";
 import { StyleSheet } from "react-native";
 
 import EditScreenInfo from "../../components/EditScreenInfo";
@@ -12,6 +12,14 @@ export default function TabOneScreen() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Tab One</Text>
+      <View
+        style={styles.separator}
+        lightColor="#eee"
+        darkColor="rgba(255,255,255,0.1)"
+      />
+      <Link href={"../"} style={{ color: "red" }}>
+        Tap here to go to `../`
+      </Link>
       <View
         style={styles.separator}
         lightColor="#eee"
